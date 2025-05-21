@@ -12,3 +12,7 @@ services:
         value: 1284230764
       - key: TWELVE_DATA_KEY
         value: 333c20fe76504a32b594c03c1126d731
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CHANNEL_ID
+        sync: false
