@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: royal-pip-oracle
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 7692005972:AAFT1-OXwDRdyTiFwqrBz4XMfKc2srQcoKc
+      - key: CHAT_ID
+        value: 1284230764
+      - key: TWELVE_DATA_KEY
+        value: 333c20fe76504a32b594c03c1126d731
